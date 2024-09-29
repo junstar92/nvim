@@ -50,6 +50,6 @@ Refer to the [documentation](https://lazyvim.github.io/installation) to get star
 
 ### nvim-ufo (code folding)
 
-- `za` : collapse/expand block in cursor
-- `zR` : collapse all blocks
-- `zM` : expand all blocks
+- `za` : toggle fold under cursor
+- `zR` : open all folds
+- `zM` : close all folds

@@ -18,3 +18,7 @@ opt.relativenumber = false
 opt.termguicolors = true
 opt.signcolumn = "yes"
 opt.scrolloff = 10
+
+-- etc
+opt.cmdheight = 1
+opt.scrolloff = 10

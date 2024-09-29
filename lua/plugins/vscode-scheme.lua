@@ -5,7 +5,7 @@ return {
     local c = require('vscode.colors').get_colors()
 
     require('vscode').setup({
-      style = 'dark',
+      style = 'light',
       -- Enable transparent background
       transparent = true,
       -- Enable italic comment
@@ -27,5 +27,13 @@ return {
     })
 
     vim.cmd([[colorscheme vscode]])
+    vim.cmd([[highlight Cursor guifg=white guibg=black]])
+    vim.cmd([[highlight iCursor guifg=white guibg=black]])
+    vim.cmd([[set guicursor+=i:ver100-iCursor]])
+
+    -- number color
+    vim.api.nvim_set_hl(0, 'LineNrAbove', { fg='blue' })
+    vim.api.nvim_set_hl(0, 'LineNr', { fg='black' })
+    vim.api.nvim_set_hl(0, 'LineNrBelow', { fg='magenta' })
   end,
 }
